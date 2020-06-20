@@ -1,0 +1,40 @@
+.Header{
+
+    margin-top: 20px;
+
+    img{
+        width: 70%;
+    }
+
+    p.internetBanking{
+        font-weight: bold;
+        color: grey;
+    }
+
+    .icon{
+        color: $main_color;
+        margin-top: 25px;
+        transition: all 0.3s ease 0s;
+        &:hover{
+            transform: translateY(-7px);
+            cursor: pointer;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .icon{
+            display:none;
+        }
+        .contentHeader{
+            flex-direction: column;
+            display: flex;
+
+            img{
+                align-self: center;
+            }
+            p.internetBanking{
+                align-self: center;
+            }
+        }
+    }
+}

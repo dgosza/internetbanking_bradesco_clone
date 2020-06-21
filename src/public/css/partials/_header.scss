@@ -1,40 +1,31 @@
-.Header{
-
+.Header {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
 
-    img{
-        width: 70%;
-    }
+    .logo {
+        flex-direction: column;
+        align-items: left;
+        max-width: 200px;
 
-    p.internetBanking{
-        font-weight: bold;
-        color: grey;
-    }
+        img {
+            width: 100%;
+        }
 
-    .icon{
+        p.internetBanking {
+            width: 100%;
+            font-weight: bold;
+            font-size: 17px;
+            color: grey;
+            text-align: right;
+        }
+    }   
+
+    .rightSide{
         color: $main_color;
-        margin-top: 25px;
-        transition: all 0.3s ease 0s;
-        &:hover{
-            transform: translateY(-7px);
-            cursor: pointer;
-        }
     }
 
-    @media (max-width: 600px) {
-        .icon{
-            display:none;
-        }
-        .contentHeader{
-            flex-direction: column;
-            display: flex;
-
-            img{
-                align-self: center;
-            }
-            p.internetBanking{
-                align-self: center;
-            }
-        }
-    }
 }

@@ -1,20 +1,82 @@
-.Main{
-
+.Main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1220px;
     margin-top: -30px;
 
-    .leftBar{
-        height: 300px;
+    .leftBar {
+        height: auto;
+        width: 300px;
         background-color: white;
         border: 2px solid $main_color;
         border-radius: 10px;
         box-shadow: 2px 2px $main_color;
-    }
 
-    .QuickAccess{
-        height: 300px;
-        background-color: white;
-        border: 2px solid $main_color;
-        border-radius: 10px;
-        box-shadow: 2px 2px $main_color;
+        .saldoConta {
+            text-align: center;
+            padding: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            p {
+                display: flex;
+                flex-direction: column;
+                font-weight: 400;
+                color: grey;
+
+                .saldo {
+                    color: $main_color;
+                    font-weight: bold;
+                    font-size:20px
+                }
+            }
+
+            .icon {
+                color: $main_color;
+                margin-top: 4px;
+            }
+        }
+
+        .dadosConta {
+            display: flex;
+            flex-direction: row;
+            margin-top: -20px;
+            p {
+                margin: 0 auto;
+                padding: 10px;
+                color: grey;
+            }
+        }
+
+        .options{
+            width: 250px;
+            margin: 0 auto;
+            display:flex;
+            flex-direction: column;
+            
+            li{
+                list-style: none;
+                color: grey;
+                display: flex;
+                flex-direction: row;
+                cursor: pointer;
+                margin-top: 20px;
+                .icon{
+                    align-self: left;
+                }
+
+                p.textList{
+                    font-weight: bold;
+                    padding: 20px;
+                    margin-top: -15px;
+                    
+                }
+            }
+
+            hr{
+                opacity: initial;
+            }
+        }
     }
 }

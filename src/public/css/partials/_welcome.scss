@@ -1,20 +1,25 @@
-.Welcome{
+.Welcome {
     margin-top: 40px;
     background-color: $main_color;
     height: 150px;
-    
-    p{
-        color: white;
+    display: flex;
 
-    }
+    .container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1220px;
 
-    p.welcome{
-        font-weight: bold;
-        font-size: 30px;
-        
-    }
+        p {
+            color: white;
+        }
 
-    p.date{
-        font-weight: 600;
+        p.welcome {
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        p.date {
+            font-weight: 600;
+        }
     }
 }

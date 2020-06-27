@@ -3,6 +3,7 @@
     width: 100%;
     max-width: 1220px;
     margin-top: -30px;
+    display:flex;
 
     .leftBar {
         height: auto;
@@ -83,6 +84,44 @@
 
             hr {
                 opacity: 0.3;
+            }
+        }
+    }
+
+    .rightSide{
+        margin: 60px;
+        
+        p.moreClicked{
+            font-weight: bold;
+            font-size: 25px;
+            color: $main_color;
+        }
+
+        .container{
+            margin-top:50px;
+
+            .box{
+                width: 120px;
+                padding:20px;
+                border: 2px solid $main_color;
+                border-radius: 8px;
+                color: $main_color;
+
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+
+                p{
+                    margin:10px;
+                    font-weight: bold;
+                }
+
+                transition: all 0.3s ease 0s;
+                &:hover{
+                    transform: translateY(-2px);
+                    transform: translateX(-2px);
+                    box-shadow: 5px 5px;
+                }
             }
         }
     }

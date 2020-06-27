@@ -15,7 +15,7 @@ import { IoIosPeople as Consorcio } from 'react-icons/io'
 import { MdSecurity as Seguro } from 'react-icons/md'
 import { AiOutlineAlignLeft as OutrosServicos } from 'react-icons/ai'
 
-
+import {GiCardDiscard as Deposito} from 'react-icons/gi'
 
 const Main = () => (
     <div className="Main">
@@ -76,6 +76,18 @@ const Main = () => (
 
             </div>
 
+        </div>
+
+        <div className="rightSide">
+            <p className="moreClicked">Serviços mais utilizados</p>
+            <div className="container">
+
+                <div className="box">
+                    <Deposito size={60} />
+                    <p>Depósitos</p>
+                </div>
+
+            </div>
         </div>
 
     </div>

@@ -92,7 +92,7 @@
         margin-top: 50px;
         margin-left: 50px;
         background-color: white;
-        padding:20px;
+        padding: 20px;
         p.moreClicked {
             font-weight: bold;
             font-size: 25px;
@@ -129,6 +129,87 @@
                     transform: translateX(-2px);
                     box-shadow: 5px 5px;
                     cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .content {
+        .investimentos {
+            .tinyTitle {
+                color: grey;
+            }
+
+            .saldo {
+                font-size: 25px;
+                color: grey;
+                span {
+                    font-weight: bold;
+                    color: $main_color;
+                }
+            }
+
+            p.title {
+                font-weight: bold;
+                font-size: 25px;
+                color: $main_color;
+            }
+
+            .investimentosResumo {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .contacorrente {
+            .title {
+                font-weight: bold;
+                font-size: 25px;
+                color: $main_color;
+            }
+
+            .status {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                .item {
+                    .tinyTitle {
+                        color: grey;
+                    }
+
+                    .saldo {
+                        font-size: 25px;
+                        color: grey;
+                        span {
+                            font-weight: bold;
+                            color: $main_color;
+                        }
+                    }
+                }
+            }
+
+            .ultimasCompras {
+                color: grey;
+                font-weight: bold;
+            }
+
+            .compras {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+
+                .item {
+                    color: grey;
+
+                    .titleCompra {
+                        color:grey;
+                    }
+
+                    .titlePrice {
+                        color: grey;
+                        span{
+                            color: $main_color;
+                            font-weight: bold;
+                        }
+                    }
                 }
             }
         }

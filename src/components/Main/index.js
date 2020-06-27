@@ -15,7 +15,13 @@ import { IoIosPeople as Consorcio } from 'react-icons/io'
 import { MdSecurity as Seguro } from 'react-icons/md'
 import { AiOutlineAlignLeft as OutrosServicos } from 'react-icons/ai'
 
-import {GiCardDiscard as Deposito} from 'react-icons/gi'
+import { GiCardDiscard as Deposito } from 'react-icons/gi'
+import { IoIosPhonePortrait as RecargaCelular } from 'react-icons/io'
+import { FaCcMastercard as Credito } from 'react-icons/fa'
+import { BsFileSpreadsheet as Comprovante } from 'react-icons/bs'
+import { FiSend as Transferencia } from 'react-icons/fi'
+import { IoMdHelp as Suporte } from 'react-icons/io'
+import { FaMoneyBillAlt as Cambio } from 'react-icons/fa'
 
 const Main = () => (
     <div className="Main">
@@ -35,42 +41,42 @@ const Main = () => (
 
             <div className="options">
                 <li>
-                    <Saldo size={30} className="icon"/>
+                    <Saldo size={30} className="icon" />
                     <p className="textList">Saldo e Extratos</p>
                 </li>
-                <hr/>
+                <hr />
                 <li>
-                    <Pagamentos size={30} className="icon"/>
+                    <Pagamentos size={30} className="icon" />
                     <p className="textList">Pagamentos</p>
                 </li>
-                <hr/>
+                <hr />
                 <li>
-                    <Cartao size={30} className="icon"/>
+                    <Cartao size={30} className="icon" />
                     <p className="textList">Cartões</p>
                 </li>
-                <hr/>
+                <hr />
                 <li>
-                    <Consorcio size={30} className="icon"/>
+                    <Consorcio size={30} className="icon" />
                     <p className="textList">Consórcios</p>
                 </li>
-                <hr/>
+                <hr />
                 <li>
-                    <Investimentos size={30} className="icon"/>
+                    <Investimentos size={30} className="icon" />
                     <p className="textList">Investimentos</p>
                 </li>
-                <hr/>
+                <hr />
                 <li>
-                    <Emprestimos size={30} className="icon"/>
+                    <Emprestimos size={30} className="icon" />
                     <p className="textList">Empréstimos</p>
                 </li>
-                <hr/>
+                <hr />
                 <li>
-                    <Seguro size={30} className="icon"/>
+                    <Seguro size={30} className="icon" />
                     <p className="textList">Seguros</p>
                 </li>
-                <hr/>
+                <hr />
                 <li>
-                    <OutrosServicos size={30} className="icon"/>
+                    <OutrosServicos size={30} className="icon" />
                     <p className="textList">Outros serviços</p>
                 </li>
 
@@ -83,8 +89,51 @@ const Main = () => (
             <div className="container">
 
                 <div className="box">
-                    <Deposito size={60} />
+                    <br />
+                    <Deposito size={40} />
                     <p>Depósitos</p>
+                </div>
+
+                <div className="box">
+                    <br />
+                    <Transferencia size={40} />
+                    <p>Transferir</p>
+                </div>
+
+                <div className="box">
+                    <br />
+                    <RecargaCelular size={40} />
+                    <p>Recarga</p>
+                </div>
+
+                <div className="box">
+                    <br />
+                    <Pagamentos size={40} />
+                    <p>Pagar conta</p>
+                </div>
+
+                <div className="box">
+                    <br />
+                    <Comprovante size={40} />
+                    <p>Comprovantes</p>
+                </div>
+
+                <div className="box">
+                    <br />
+                    <Credito size={40} />
+                    <p>Crédito</p>
+                </div>
+
+                <div className="box">
+                    <br />
+                    <Suporte size={40} />
+                    <p>Suporte</p>
+                </div>
+
+                <div className="box">
+                    <br />
+                    <Cambio size={40} />
+                    <p>Câmbio</p>
                 </div>
 
             </div>

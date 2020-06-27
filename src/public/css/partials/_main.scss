@@ -10,7 +10,6 @@
         background-color: white;
         border: 2px solid $main_color;
         border-radius: 10px;
-        box-shadow: 2px 2px $main_color;
 
         .saldoConta {
             text-align: center;
@@ -28,7 +27,7 @@
                 .saldo {
                     color: $main_color;
                     font-weight: bold;
-                    font-size:20px
+                    font-size: 20px;
                 }
             }
 
@@ -46,36 +45,44 @@
                 margin: 0 auto;
                 padding: 10px;
                 color: grey;
+
+                span{
+                    font-weight: bold;
+                    color: $main_color;
+                }
             }
         }
 
-        .options{
+        .options {
             width: 250px;
             margin: 0 auto;
-            display:flex;
+            display: flex;
             flex-direction: column;
-            
-            li{
+
+            li {
                 list-style: none;
-                color: grey;
+                color: $main_color;
                 display: flex;
                 flex-direction: row;
                 cursor: pointer;
                 margin-top: 20px;
-                .icon{
+                .icon {
                     align-self: left;
                 }
 
-                p.textList{
+                p.textList {
                     font-weight: bold;
                     padding: 20px;
                     margin-top: -15px;
-                    
+                }
+
+                &:hover{
+                    color: grey;
                 }
             }
 
-            hr{
-                opacity: initial;
+            hr {
+                opacity: 0.3;
             }
         }
     }

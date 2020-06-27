@@ -7,6 +7,14 @@ import QuickAccess from './QuickAccess'
 //React icons
 import { AiFillEyeInvisible as Hide } from 'react-icons/ai'
 import { FaMoneyCheckAlt as Saldo } from 'react-icons/fa'
+import { GiReceiveMoney as Investimentos } from 'react-icons/gi'
+import { MdAttachMoney as Emprestimos } from 'react-icons/md'
+import { GiPayMoney as Pagamentos } from 'react-icons/gi'
+import { FaCreditCard as Cartao } from 'react-icons/fa'
+import { IoIosPeople as Consorcio } from 'react-icons/io'
+import { MdSecurity as Seguro } from 'react-icons/md'
+import { AiOutlineAlignLeft as OutrosServicos } from 'react-icons/ai'
+
 
 
 const Main = () => (
@@ -21,8 +29,8 @@ const Main = () => (
 
 
             <div className="dadosConta">
-                <p>Agência: 118</p>
-                <p>Conta: 15715-1</p>
+                <p>Agência: <span>118</span></p>
+                <p>Conta: <span>15715-1</span></p>
             </div>
 
             <div className="options">
@@ -32,20 +40,38 @@ const Main = () => (
                 </li>
                 <hr/>
                 <li>
-                    <Saldo size={30} className="icon"/>
-                    <p className="textList">Saldo e Extratos</p>
+                    <Pagamentos size={30} className="icon"/>
+                    <p className="textList">Pagamentos</p>
                 </li>
+                <hr/>
                 <li>
-                    <Saldo size={30} className="icon"/>
-                    <p className="textList">Saldo e Extratos</p>
+                    <Cartao size={30} className="icon"/>
+                    <p className="textList">Cartões</p>
                 </li>
+                <hr/>
                 <li>
-                    <Saldo size={30} className="icon"/>
-                    <p className="textList">Saldo e Extratos</p>
+                    <Consorcio size={30} className="icon"/>
+                    <p className="textList">Consórcios</p>
                 </li>
+                <hr/>
                 <li>
-                    <Saldo size={30} className="icon"/>
-                    <p className="textList">Saldo e Extratos</p>
+                    <Investimentos size={30} className="icon"/>
+                    <p className="textList">Investimentos</p>
+                </li>
+                <hr/>
+                <li>
+                    <Emprestimos size={30} className="icon"/>
+                    <p className="textList">Empréstimos</p>
+                </li>
+                <hr/>
+                <li>
+                    <Seguro size={30} className="icon"/>
+                    <p className="textList">Seguros</p>
+                </li>
+                <hr/>
+                <li>
+                    <OutrosServicos size={30} className="icon"/>
+                    <p className="textList">Outros serviços</p>
                 </li>
 
             </div>

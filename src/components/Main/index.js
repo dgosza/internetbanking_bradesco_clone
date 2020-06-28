@@ -1,13 +1,9 @@
 import React from 'react';
 import '../../public/css/main.scss'
 
-//Components
-import QuickAccess from './QuickAccess'
-
 //React icons
 import { AiFillEyeInvisible as Hide } from 'react-icons/ai'
 import { FaMoneyCheckAlt as Saldo } from 'react-icons/fa'
-import { GiReceiveMoney as Investimentos } from 'react-icons/gi'
 import { MdAttachMoney as Emprestimos } from 'react-icons/md'
 import { GiPayMoney as Pagamentos } from 'react-icons/gi'
 import { FaCreditCard as Cartao } from 'react-icons/fa'
@@ -24,7 +20,6 @@ import { IoMdHelp as Suporte } from 'react-icons/io'
 import { FaMoneyBillAlt as Cambio } from 'react-icons/fa'
 
 import { AiOutlineRise as Investimento } from 'react-icons/ai'
-import { GiFoodTruck as Restaurante } from 'react-icons/gi'
 
 const Main = () => (
     <div className="Main">

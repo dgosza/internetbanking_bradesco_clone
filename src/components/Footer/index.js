@@ -2,7 +2,6 @@ import React from 'react';
 
 import { FiPhoneCall as Contato } from 'react-icons/fi'
 import { BsFillChatDotsFill as Chat } from 'react-icons/bs'
-import { BsFillPersonLinesFill as Gerente } from 'react-icons/bs'
 
 const Footer = () => {
     return (
@@ -20,7 +19,7 @@ const Footer = () => {
                 <div className="item">
                     <p className="title">Dicas de Segurança</p>
                     <p className="subtitle">Confira dicas para a utilização do internet banking com segurança.</p>
-                    <a href="#">Clique aqui</a>
+                    <a href="!#">Clique aqui</a>
                 </div>
 
             </div>

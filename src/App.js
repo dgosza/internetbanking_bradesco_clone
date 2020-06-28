@@ -5,6 +5,7 @@ import './public/css/main.scss';
 import Header from './components/Header'
 import Welcome from './components/Welcome'
 import Main from './components/Main'
+import Footer from './components/Footer'
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
             <Header />
             <Welcome />
             <Main />
+            <Footer />
         </Fragment>
     );
 }
